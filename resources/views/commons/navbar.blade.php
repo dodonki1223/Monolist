@@ -29,7 +29,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">マイページ</a>
+                                    <a href="{{ route('users.show', Auth::user()->id) }}">マイページ</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('logout.get') }}">ログアウト</a>
